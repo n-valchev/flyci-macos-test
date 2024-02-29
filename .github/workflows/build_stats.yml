@@ -23,6 +23,7 @@ jobs:
     - name: Install CocoaPods dependencies
       run: bundle exec pod install
     - run: git config --global core.quotepath false # for Ikemen on SwiftPM
+    - run: sleep 660 # sleep for 11 mins
     - name: Build (iOS)
       run: |
         set -o pipefail
